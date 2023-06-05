@@ -9,8 +9,8 @@ sendButton.addEventListener("click", () => {
     let telValue = telInput.value;
     let consultValue = consultInput.value;
     if (nameValue != "" && mailValue != "" && telValue != "")
-        window.open(`mailto:mzinternational@internationalmz.com?subject=Solicitud de contacto de ${nameValue} &body=Buenas tardes!. 
-        Mi nombre es ${nameValue} con telÃ©fono de contacto ${telValue}.
+        window.open(`mailto:internationalmz@internationalmz.com?subject=Solicitud de contacto de ${nameValue} &body=
+        Mi nombre es ${nameValue} con teléfono de contacto ${telValue}.
         Mi consulta es ${consultValue}.`);
 })
 
