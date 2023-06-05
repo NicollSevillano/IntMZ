@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.body{
+    overflow-x: hidden;
+}
+:root{
+    --width: 30rem;
+    --lenght: 50rem;
+}
+.conteinerIndex {
+    margin: 0;
+    padding: 0;
+}
+/*NAV*/
+.container-fluid-collap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; font-size: 25px;
+    .nav-link{
+        color: black;
+    }
+}
+.boton{
+    background-color: #2C2B26;
+    color: #fffcdd;
+    border: none; border-radius: 2rem; margin: 0.4rem;
+    font-size: 20px; padding: 8px;
+}
+.boton:hover{
+    background-color: #fafafa;
+    color: #2C2B26;
+    border-color: #626262;
+    border-style: solid;
+}
+.head{
+    justify-self: center;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-bottom-color: #C1BFBF;
+}
+.img-size{
+    height: 180px; width: 195px;
+}
+/*Main1*/
+.imgMain {
+    height: 700px;
+    width: 800px;
+    position: relative;
+    display: inline-block;
+    justify-content: flex-end;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h1Main{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 80px;
+}
+.letrasMain{
+    padding: 70px;
+    position: relative; gap: 15px;
+}
+.h2Main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px; font-weight: 700;
+}
+.ulMain{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; font-weight: 700;
+    margin-left: 50px;
+}
+/*Main 2*/
+.main2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    align-items: center;
+}
+.imagenMain2{
+    position: relative;
+    width: 25rem;  
+    height: 30rem;
+}
+.clientesMain{
+    text-align: center;
+    filter: brightness(7%); 
+}
+.h2Main2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px; font-weight: 700;
+    text-decoration: underline;
+}
+.letrasMain2{
+    font-style: italic;
+}
+.numMain{
+    font-size: 3.5rem;
+    font-weight:500;
+}
+.pMain{
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*Slider*/
+.contenedorSlider{
+    background-image: url("./img/fondocarrusel.png");
+    background-repeat: no-repeat; background-size: cover;
+}
+.logos{
+    overflow: hidden;
+    white-space: nowrap; align-items: center;
+    position: relative; margin-bottom: 2rem;
+}
+.logos:before,
+.logos:after
+{
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.logos-Slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+.logos-Slide img{
+    height: 100px;
+    width: 120px;
+    margin: 15px; object-fit: contain;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos2{
+    overflow: hidden;
+    white-space: nowrap; align-items: center;
+    position: relative; margin-bottom: 2rem;
+}
+.logos2:before,
+.logos2:after
+{
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.Lslider{
+    display: inline-block;
+    animation: 26s slider infinite linear;
+}
+.Lslider img{
+    height: 100px; margin: 15px;
+    width: 120px; object-fit: contain;
+}
+@keyframes slider {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/*Nosotros*/
+.containNos {
+    background-image: url("./img/fondoNosotros.png");
+    height: 50rem;
+    background-position: center;
+    background-size: cover;
+    border-top-color: #C1BFBF;
+    border-top-style: solid;
+}
+.h2-main{
+    text-align: center;
+    padding: 4rem;
+    font-size: 50px; font-weight: 700;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+.imgNosotros {
+    width: 150px;
+    height: 180px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.cardContenedora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    gap: 15px;
+    padding: 20px;border: 1px rgba(211, 211, 211, 0.486) solid; transition: 0.6s;
+    cursor: default;
+}
+.cardContenedora:hover {
+    transition: 0.6s; box-shadow: 5px 5px 20px lightgray;
+}
+.hTres {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.hCuatro {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.pUno {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*Contacto*/
+.contenedorContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/Contact.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.fullcontenedor{
+    text-transform: uppercase;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-self:center;
+    align-items: center;
+    background: transparent;
+}
+.input{
+    width: 100%;
+    background:none;
+    border: none;
+    border-bottom: #626262 3px solid;
+    outline: none;
+    color: #fefeff;
+}
+.h3Contacto{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 50px; font-weight: 700;
+    margin-bottom: 4rem;
+}
+#text-area{
+    resize: none;
+    background-color: #626262;   
+    width: 100%;
+    height: 10rem;
+    color: white;
+    opacity: .70;
+    padding-left: 2%;
+    outline: none;
+}
+#input-name::placeholder, #input-email::placeholder, #input-tel::placeholder, #text-area::placeholder{
+    color: #fefeff; background: transparent;
+
+}
+.contactbutton{
+    width: 25%;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #626262;
+    color: white;
+}
+
+/*Footer*/
+footer{
+    font-family: 'Roboto', sans-serif;
+    position: static;
+}
+.footer-container{
+    background-color: #010001;
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-span{
+    padding: 0 5%;
+    color: #fefeff;
+    font-family: 'Golos Text', sans-serif;
+    font-size: calc(1.2vw + 5px);
+    align-items: center;
+}
+
+@media (width < 992px){
+    .contGen{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        gap: 10px;
+    }
+    .container-fluid-collap{
+        font-size: 20px;
+    }
+    .h1Main{
+        font-size: 50px;
+    }
+    .h2Main{
+        font-size: 35px;
+    }
+    .ulMain{
+        font-size: 25px;
+    }
+    .main{
+        overflow: hidden;
+    }
+    .imgMain{
+        height: 500px;
+        width: 350px;
+        position: relative;
+    }
+    .letrasMain{
+        padding: 0;
+        margin: 0;
+        padding-left: 4rem;
+        padding-top: 1rem;
+    }
+    .imgNosotros{
+        width: 70px;
+        height: 90px;
+    }
+    .hTres {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .hCuatro {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .pUno {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+@media (width < 600px) {
+    .contGen{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        gap: 10px;
+    }
+    .container-fluid-collap{
+        font-size: 20px;
+    }
+    .h1Main{
+        font-size: 30px;
+    }
+    .h2Main{
+        font-size: 25px;
+    }
+    .ulMain{
+        font-size: 15px;
+    }
+    .imgMain{
+        height: 300px;
+        width: 250px;
+        position: relative;
+    }
+    .main{
+        overflow: hidden;
+        
+    }
+    .letrasMain{
+        padding: 0;
+        margin: 0;
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+    .main2{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+    .imagenMain2{
+        position: relative;
+        width: 15rem;  
+        height: 20rem;
+    }
+    .clientesMain{
+        text-align: center;
+        filter: brightness(7%); 
+    }
+    .h2Main2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem; font-weight: 700;
+        text-decoration: underline;
+    }
+    .letrasMain2{
+        font-style: italic;
+    }
+    .numMain{
+        font-size: 2rem;
+        font-weight:700;
+    }
+    .pMain{
+        font-size: 1rem;
+        margin-top: -1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .contenedorSlider{
+        height: 15rem;
+    }
+    .logos{
+        overflow: hidden;
+        white-space: nowrap;
+        justify-content: center;
+        position: relative;
+        margin-bottom: -1rem;
+    }
+    .containNos {
+        background-image: url("./img/fondoNosotros.png");
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        border-top-color: #C1BFBF;
+        border-top-style: solid;
+        padding-bottom: 4rem;
+    }
+    .cardContenedora{
+        height: 30rem;
+        width: 20rem;
+    }
+    .imgNosotros{
+        height: 10rem;
+        width: 11rem;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .hTres {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .hCuatro {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .pUno {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .h3Contacto{
+        font-size: 2.3rem;
+    }
+    .input{
+        width: 50%;
+    }
+    .contactbutton{
+        width: 20%;
+    }
+    #text-area{
+        width: 50%;
+        border-radius: 15px;
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-span{
+        padding: 1%;
+        font-size: 105%;
+        font-weight: 700;
+    }
+}
+@media (width < 450){
+    .imgMain{
+        overflow: hidden;
+    }
+}
+@media  (width < 380px) {
+    .conteinerIndex{
+        overflow-x: hidden;
+        padding: 0; margin: 0;
+    }
+    .contGen{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        gap: 10px; font-size: 5px;
+    }
+    .container-fluid-collap{
+        font-size: 20px;
+    }
+    .h1Main{
+        font-size: 30px;
+    }
+    .h2Main{
+        font-size: 20px;
+    }
+    .ulMain{
+        font-size: 1rem;
+    }
+    .imgMain{
+        height: 300px;
+        width: 250px;
+        position: relative;
+    }
+    .letrasMain{
+        padding: 0;
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .main2{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .imagenMain2{
+        position: relative;
+    }
+    .contenedorMain2{
+        text-align: center;
+        filter: brightness(7%); 
+        position: absolute;
+    }
+    .h2Main2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem; font-weight: 700;
+        text-decoration: underline;
+    }
+    .letrasMain2{
+        font-style: italic;
+    }
+    .numMain{
+        font-size: 2rem;
+        font-weight:700;
+    }
+    .pMain{
+        font-size: 1rem;
+        margin-top: -1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .containNos {
+        background-image: url("./img/fondoNosotros.png");
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        border-top-color: #C1BFBF;
+        border-top-style: solid;
+        padding-bottom: 3rem;
+    }
+    .imgNosotros{
+        height: 8rem;
+        width: 7rem;
+    }
+    .cardContenedora{
+        height: 25rem;
+        width: 18rem;
+    }
+    .h2-main{
+        text-align: center;
+        padding: 2rem;
+        font-size: 40px; font-weight: 700;
+    }
+    .h3Contacto{
+        font-size: 2.3rem;
+    }
+    .input{
+        width: 50%;
+    }
+    .contactbutton{
+        width: 20%;
+    }
+    #text-area{
+        width: 50%;
+        border-radius: 15px;
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-span{
+        font-weight: 700;
+    }
+}

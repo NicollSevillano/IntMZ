@@ -1,0 +1,328 @@
+:root{
+    --width: 30rem;
+    --lenght: 50rem;
+}
+*{
+    scroll-behavior: smooth;
+}
+.talent-management-section{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.talent-management-card-container{
+    position: relative;
+}
+.talent-management-card-image-container{
+    width: var(--width);
+    height: var(--lenght);
+    position: absolute;
+    top: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.talent-management-image{
+    width: 100%;
+    height: 100%;
+}
+.talent-management-text{
+    position: absolute;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 1.5rem;
+}
+.talent-management-overlay-text{
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 1.5rem;
+    >
+    ul{
+        margin: 0 10%;
+    }
+}
+ol{
+    margin: 1.5rem;
+    >
+    li{
+        font-size: 1.2rem;
+    }
+}
+.talent-management-card-overlay{
+    width: var(--width);
+    height: var(--lenght);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (width >= 992px){
+    .talent-management-card-container:hover .talent-management-card-image-container{
+        opacity: 0;
+    }
+    .talent-management-card-container:hover .talent-management-overlay-text{
+        opacity: 1;
+    }
+}
+@media (width < 992px){
+    .talent-management-section{
+        flex-direction: column;
+        margin-bottom: 10rem;
+        padding: 2rem;
+    }
+    .talent-management-card-image-container{
+        width: 100%;
+        height: 20rem;
+        opacity: 1;
+    }
+    .talent-management-card-overlay{
+        width: 100%;
+        height: 25rem;
+    }
+    .talent-management-card-container{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .talent-management-image{
+        object-fit: cover;
+    }
+    .talent-management-text{
+        font-size: 1rem;
+    }
+    .talent-management-overlay-text{
+        opacity: 0;
+        transition: .5s ease;
+        font-size: 1rem;
+        opacity: 1;
+        padding-top: 4rem;
+        >
+        ul{
+            margin: 0 5%;
+        }
+    }
+    ol{
+        margin: 1rem;
+        >
+        li{
+            font-size: 0.8rem;
+        }
+    }
+    .title{
+        top: 12%;
+        font-weight: 800;
+        text-align: center;
+    }
+}
+/* Consultoría */
+.consulting-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10% 0;
+}
+.consulting-card-image-container{
+    width: var(--width);
+    height: var(--lenght);
+    position: absolute;
+    top: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > 
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.consulting-card-container{
+    position: relative;
+}
+.consulting-text{
+    position: absolute;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.consulting-overlay-text{
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 2rem;
+}
+.consulting-card-overlay{
+    width: var(--width);
+    height: var(--lenght);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.consulting-title{
+    font-size: 3vw;
+    padding: 5% 0;
+    color: white;
+}
+.consulting-page-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+@media (width >= 992px){
+    .consulting-card-container:hover .consulting-card-image-container{
+        opacity: 0;
+    }
+    .consulting-card-container:hover .consulting-overlay-text{
+        opacity: 1;
+    }
+}
+@media (width < 992px){
+    .consulting-section{
+        flex-direction: column;
+    }
+    .consulting-card-image-container{
+        width: 100%;
+        height: 20rem;
+        opacity: 1;
+    }
+    .consulting-card-overlay{
+        width: 100%;
+        height: 20rem;
+    }
+    .consulting-card-container{
+        width: 100%;
+        margin: 0 2rem;
+    }
+    .consulting-image{
+        object-fit: cover;
+    }
+    .consulting-text{
+        font-size: 2.2vw;
+    }
+    .consulting-overlay-text{
+        opacity: 0;
+        transition: .5s ease;
+        font-size: 1.5vw;
+        opacity: 1;
+        padding: 0 1rem 0 0;
+    }
+    .consulting-page-row{
+        margin: 0 2rem;
+    }
+}
+@media (width < 640px){
+    .consulting-button{
+        font-size: 10px;
+    }
+    .consulting-page-row{
+        flex-direction: column;     
+    }
+    .consulting-title{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .consulting-card-container{
+        margin: 2rem 0;
+    }
+    .consulting-text{
+        font-size: 3.5vw;
+    }
+    .consulting-overlay-text{
+        margin-top: 4rem;
+    }
+}
+/*Gerencia*/
+.gerency-section{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.gerency-card-image-container{
+    width: 50rem;
+    height: var(--lenght);
+    position: absolute;
+    top: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > 
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.gerency-card-container{
+    position: relative;
+}
+.gerency-text{
+    position: absolute;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 2rem;
+}
+.gerency-overlay-text{
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 2rem;
+}
+.gerency-card-overlay{
+    width: 50rem;
+    height: var(--lenght);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (width >= 992px){
+    .gerency-card-container:hover .gerency-card-image-container{
+        opacity: 0;
+    }
+    .gerency-card-container:hover .gerency-overlay-text{
+        opacity: 1;
+    }
+}
+@media (width < 992px){
+    .gerency-section{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .gerency-card-image-container{
+        width: 100%;
+        height: 30rem;
+        opacity: 1;
+    }
+    .gerency-card-overlay{
+        width: 100%;
+        height: 30rem;
+    }
+    .gerency-card-container{
+        width: 100%;
+    }
+    .gerency-image{
+        object-fit: cover;
+    }
+    .gerency-overlay-text{
+        margin-top: 5rem;
+        opacity: 0;
+        transition: .5s ease;
+        font-size: 1rem;
+        opacity: 1;
+    }
+}
+@media (width <= 440px){
+    .gerency-text{
+        font-size: 0.8rem;
+    }
+}
