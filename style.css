@@ -499,13 +499,13 @@ footer{
         font-size: 2.3rem;
     }
     .input{
-        width: 50%;
+        width: 90%;
     }
     .contactbutton{
         width: 20%;
     }
     #text-area{
-        width: 50%;
+        width: 90%;
         border-radius: 15px;
     }
     .footer-container{
@@ -523,8 +523,6 @@ footer{
     .imgMain{
         overflow: hidden;
     }
-}
-@media  (width < 380px) {
     .conteinerIndex{
         overflow-x: hidden;
         padding: 0; margin: 0;
@@ -614,14 +612,8 @@ footer{
     .h3Contacto{
         font-size: 2.3rem;
     }
-    .input{
-        width: 50%;
-    }
-    .contactbutton{
-        width: 20%;
-    }
     #text-area{
-        width: 50%;
+        width: 50rem;
         border-radius: 15px;
     }
     .footer-container{
