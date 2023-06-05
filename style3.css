@@ -74,7 +74,7 @@ ol{
     }
     .talent-management-card-image-container{
         width: 100%;
-        height: 20rem;
+        height: 25rem;
         opacity: 1;
     }
     .talent-management-card-overlay{
@@ -115,7 +115,7 @@ ol{
         text-align: center;
     }
 }
-/* Consultoría */
+/* ConsultorÃ­a */
 .consulting-section{
     width: 100%;
     display: flex;
@@ -145,12 +145,13 @@ ol{
     position: absolute;
     font-family: 'Golos Text', sans-serif;
     font-size: 1.5rem;
-    text-align: center;
+    margin-left: 1.5rem;
 }
 .consulting-overlay-text{
     opacity: 0;
     transition: .5s ease;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
 }
 .consulting-card-overlay{
     width: var(--width);
