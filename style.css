@@ -44,7 +44,8 @@
     border-bottom-color: #C1BFBF;
 }
 .img-size{
-    height: 180px; width: 195px;
+    height: 140px; width: 165px;
+    padding: .4rem;
 }
 /*Main1*/
 .imgMain {

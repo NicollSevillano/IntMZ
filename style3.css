@@ -250,7 +250,7 @@ ol{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    padding: 5% 0;
+    padding: 10% 0;
 }
 .gerency-card-image-container{
     width: 50rem;
