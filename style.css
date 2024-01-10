@@ -114,7 +114,7 @@
 }
 /*Slider*/
 .contenedorSlider{
-    background-image: url("./img/fondocarrusel.png");
+    background-image: url("./img1/fondocarrusel.png");
     background-repeat: no-repeat; background-size: cover;
 }
 .logos{
@@ -183,7 +183,7 @@ z-index: 2;
 
 /*Nosotros*/
 .containNos {
-    background-image: url("./img/fondoNosotros.png");
+    background-image: url("./img1/fondoNosotros.png");
     height: 50rem;
     background-position: center;
     background-size: cover;
@@ -212,6 +212,7 @@ z-index: 2;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .cardContenedora {
     display: flex;
@@ -251,7 +252,7 @@ z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./img/Contact.png");
+    background-image: url("./img1/Contact.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -461,7 +462,7 @@ footer{
         margin-bottom: -1rem;
     }
     .containNos {
-        background-image: url("./img/fondoNosotros.png");
+        background-image: url("./img1/fondoNosotros.png");
         height: auto;
         background-position: center;
         background-size: cover;
@@ -589,7 +590,7 @@ footer{
         text-transform: uppercase;
     }
     .containNos {
-        background-image: url("./img/fondoNosotros.png");
+        background-image: url("./img1/fondoNosotros.png");
         height: auto;
         background-position: center;
         background-size: cover;
